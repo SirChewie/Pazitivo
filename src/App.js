@@ -8,8 +8,7 @@ function Ribbon(){
         <tbody>
           <tr>
             <td id='homeButton' className='button'><a href='#top'>Home</a></td>
-            <td className='button'><a href='#top'>Menu</a></td>
-            <td className='button'><a href='#top'>Contact</a></td>
+            <td className='button'><a href='#contactInfo'>Contact</a></td>
           </tr>
         </tbody>
       </table>
@@ -29,12 +28,11 @@ function Landing() {
 function ContactInfo(){
   return(
     <>
-      <span><h4>Address:</h4><br/> <p className='indent'>2385 Smelley Rd,</p><p className='indent'> Longview, TX 75605</p><br/>
+      <span id='contactInfo'><h4>Address:</h4><br/> <p className='indent'>2385 Smelley Rd,</p><p className='indent'> Longview, TX 75605</p><br/>
       </span>
       <span><h4>Hours:</h4><br/>
-      <p className='indent'>Monday - Thursday 11:30am - 9:00pm </p>
-      <p className='indent'>Friday - Saturday 11:30am - 10:00pm</p>
-      <p className='indent'>Sunday 11:30am - 8:00pm</p><br/>
+      <p className='indent'>Wednesday - Sunday 10:00am - 7:00pm </p>
+      <br/>
       </span>
       <span><h4 >Phone Number:<br/><br/><a className='indent' id='phoneNumber' href='tel:903-746-1899'>903-746-1899</a></h4></span>
       
@@ -48,14 +46,24 @@ function Map(){
   )
 }
 
+function DualSec(props){
+  return(
+    <div className='DualSec'>
+      <h2 className='title'>{props.title}</h2>
+      <div id='leftContact'>{props.text}</div>
+      <p id='rightContact'>{props.contents}
+      </p>
+    </div>
+  )
+}
 function Sec(props){
   return(
-  <div className='Sec'>
-    <h2 className='title'>{props.title}</h2>
-    <div id='leftContact'>{props.text}</div>
-    <p id='rightContact'>{props.contents}
-    </p>
-  </div>
+    <>
+      <span className='Sec'>
+        <h2 className='title'>{props.title}</h2>
+        <p id='text'>{props.text}</p>
+      </span>
+    </>
   )
 }
 
@@ -65,8 +73,8 @@ function App() {
       
       <Ribbon/>
       <Landing  id='top' />
-      <Sec title= 'Our Menu' contents={'placeholder text'}/>
-      <Sec title= 'Contact Us' text={<ContactInfo/>}contents={<Map/>}/>
+      <Sec title='Pazitivo Inspired Kitchen'/>
+      <DualSec title= 'Contact Us' text={<ContactInfo/>}contents={<Map/>}/>
       
     </div>
   );
