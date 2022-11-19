@@ -73,7 +73,6 @@ function App() {
       
       <Ribbon/>
       <Landing  id='top' />
-      <Sec title='Pazitivo Inspired Kitchen'/>
       <DualSec title= 'Contact Us' text={<ContactInfo/>}contents={<Map/>}/>
       
     </div>

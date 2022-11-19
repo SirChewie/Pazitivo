@@ -4,12 +4,6 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-image: url(IMG_4869.jpeg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  border-radius: 1.5em;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -52,6 +46,11 @@ tr{
 .Landing{
   padding-top: 50vh;
   padding-bottom: 35vh;
+  background-image: url(B487D322-E0FB-49C3-BC34-AF627B692F5F.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
 }
 
 .DualSec{
@@ -59,6 +58,7 @@ tr{
   background-color: rgba(17, 16, 16, 0.953);
   margin: auto 0;
   height: 87vh;
+  border-radius: 1.5em;
 }
 
 .Sec{

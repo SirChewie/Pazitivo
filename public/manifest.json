@@ -1,21 +1,16 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Pazitivo",
+  "name": "Pazitivo Inspired Kitchen",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
+      "src": "B487D322-E0FB-49C3-BC34-AF627B692F5F.jpeg",
+      "type": "image/jpeg",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "B487D322-E0FB-49C3-BC34-AF627B692F5F.ico",
+      "type": "image/x-icon",
+      "sizes": "256x256 128x128 64x64 32x32 16x16"
     }
   ],
   "start_url": ".",
