@@ -1,8 +1,6 @@
 html{
-background: fixed;
 background-color: #FFFFFF;
-width: 100%;
-height: auto;
+width: 100vw;
 }
 
 body {

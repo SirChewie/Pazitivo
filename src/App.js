@@ -1,3 +1,4 @@
+import './Reset.css'
 import './App.css';
 
 function Ribbon(){
@@ -56,6 +57,7 @@ function DualSec(props){
     </div>
   )
 }
+/*
 function Sec(props){
   return(
     <>
@@ -66,6 +68,7 @@ function Sec(props){
     </>
   )
 }
+*/
 
 function App() {
   return (
