@@ -1,5 +1,7 @@
-import './Reset.css'
+import './Reset.css';
 import './App.css';
+import menuPicture from './Menu.jpg'
+
 
 function Ribbon(){
   return (
@@ -9,6 +11,7 @@ function Ribbon(){
         <tbody>
           <tr>
             <td id='homeButton' className='button'><a href='#top'>Home</a></td>
+            <td className='button'><a href='#Menu'>Menu</a></td>
             <td className='button'><a href='#contactInfo'>Contact</a></td>
           </tr>
         </tbody>
@@ -32,7 +35,7 @@ function ContactInfo(){
       <span id='contactInfo'><h4>Address:</h4><br/> <p className='indent'>2385 Smelley Rd,</p><p className='indent'> Longview, TX 75605</p><br/>
       </span>
       <span><h4>Hours:</h4><br/>
-      <p className='indent'>Wednesday - Sunday 10:00am - 7:00pm </p>
+      <p className='indent'>Tuesday - Sunday 10:00am - 7:00pm </p>
       <br/>
       </span>
       <span><h4 >Phone Number:<br/><br/><a className='indent' id='phoneNumber' href='tel:903-746-1899'>903-746-1899</a></h4></span>
@@ -57,18 +60,17 @@ function DualSec(props){
     </div>
   )
 }
-/*
-function Sec(props){
+
+function Menu(props){
   return(
     <>
-      <span className='Sec'>
-        <h2 className='title'>{props.title}</h2>
-        <p id='text'>{props.text}</p>
-      </span>
+    <div className='Menu'>
+      <h2 className='title'>{props.title}</h2>
+      <img id='Menu' src={menuPicture} alt='The restaurant menu'/>
+    </div>
     </>
   )
 }
-*/
 
 function App() {
   return (
@@ -76,6 +78,7 @@ function App() {
       
       <Ribbon/>
       <Landing  id='top' />
+      <Menu title='Our Menu' contents = {<div id='menu'></div>}/>
       <DualSec title= 'Contact Us' text={<ContactInfo/>}contents={<Map/>}/>
       
     </div>
