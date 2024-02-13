@@ -1,1 +1,1 @@
-This is a website for Pazitivo.
+This is a website for Pazitivo Inspired Kitchen the restaurant.
