@@ -29,6 +29,7 @@ function Landing() {
     )
 }
 
+
 function ContactInfo(){
   return(
     <>
@@ -39,7 +40,6 @@ function ContactInfo(){
       <br/>
       </span>
       <span><h4 >Phone Number:<br/><br/><a className='indent' id='phoneNumber' href='tel:903-746-1899'>903-746-1899</a></h4></span>
-      
     </>
   )
 }
